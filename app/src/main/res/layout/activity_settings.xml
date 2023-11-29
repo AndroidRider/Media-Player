@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Activity.SettingsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarPlayerActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/themeColor"
+        app:navigationIconTint="@color/white"
+        app:title="Settings"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Set Theme"
+        android:textSize="18sp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/theme0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle_icon"
+            android:tint="@color/theme0"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/theme1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle_icon"
+            android:tint="@color/theme1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/theme2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle_icon"
+            android:tint="@color/theme2"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/theme3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle_icon"
+            android:tint="@color/theme3"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/theme4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle_icon"
+            android:tint="@color/theme4"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/theme5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle_icon"
+            android:tint="@color/theme5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="2dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:paddingStart="5dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="Sort by"
+            android:textSize="18sp"
+            android:background="@color/white"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sortButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sort_icon"
+            android:tint="@color/mainColor"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/versionName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:text="Version : 1.0"
+        android:textSize="18sp"
+        android:background="@color/white"/>
+
+
+
+</LinearLayout>

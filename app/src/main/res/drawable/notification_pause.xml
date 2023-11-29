@@ -1,0 +1,14 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Add padding here -->
+<item android:left="4dp" android:right="4dp" android:top="2dp" android:bottom="2dp">
+    <vector
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="87.72"
+        android:viewportHeight="122.88"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <path android:fillColor="@color/mainColor" android:fillType="evenOdd" android:pathData="M0,0h29.54v122.88l-35.54,0V0L0,0zM52.18,0h41.54v122.88l-35.54,0V0L52.18,0z"/>
+    </vector>
+</item>
+</layer-list>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PlaylistDetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/themeColor"
+        app:title="Playlist"
+        app:titleTextColor="@color/white"
+        app:titleCentered="true"
+        app:navigationIconTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pdImage"
+            android:layout_width="230dp"
+            android:background="@color/mainColor"
+            android:layout_height="match_parent"
+            android:src="@drawable/music_logo"/>
+        <TextView
+            android:id="@+id/pdName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PlayList Name"
+            android:gravity="center|start"
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="?attr/themeColor"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pdRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDetails" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--        Add button-->
+
+        <Button
+            android:id="@+id/addPlaylistDetailBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_add"
+            android:singleLine="true"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!--        Remove button-->
+        <Button
+            android:id="@+id/removePlaylistDetailBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_remove"
+            android:singleLine="true"
+            android:text="Remove All"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

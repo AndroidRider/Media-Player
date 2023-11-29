@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D50000</color>
+    <color name="green">#00C853</color>
+    <color name="blue">#6200EA</color>
+
+
+    <color name="theme0">#FA253D</color>
+    <color name="theme1">#00C853</color>
+    <color name="theme2">#304FFE</color>
+    <color name="theme3">#C51162</color>
+    <color name="theme4">#FF6D00</color>
+    <color name="theme5">#FF000000</color>
+    <color name="theme6">#00BFA5</color>
+    <color name="theme7">#FFD600</color>
+    <color name="theme8">#AA00FF</color>
+    <color name="theme9">#D50000</color>
+
+    <color name="mainColor2">#26A69A</color>
+    <color name="mainColor">#FA253D</color>
+
+    <color name="toolbarColor">@color/mainColor</color>
+    <color name="statusBarColor">@color/toolbarColor</color>
+
+    <color name="indicatorColor">#400014</color>
+    <color name="lineIndicatorColor">@color/mainColor</color>
+    <color name="bottom_bar_item">@color/mainColor</color>
+    <color name="bottom_bar_text">#000000</color>
+    <color name="bottom_bar_background">#fef1f1</color>
+    <color name="bottom_bar_indicator_color">#e7bdca</color>
+
+
+
+    <!--FoodRunner-->
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#D81B60</color>
+    <color name="purple_700">#C2185B</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#AD1457</color>
+
+    <color name="cost_for_one">#e53935</color>
+    <color name="btn_color">#F44336</color>
+
+    <color name="primaryDark">#292b3d</color>
+    <color name="grayLight">#F7FAFAFA</color>
+    <color name="startBlue">#AD1457</color>
+    <color name="endBlue">#AD1457</color>
+    <color name="developer_text">#1B1819</color>
+
+
+
+</resources>

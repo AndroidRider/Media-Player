@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/allSongFragment"
+        android:title="All Song"
+        android:icon="@drawable/icon_library_music"/>
+
+    <item android:id="@+id/favoriteSongFragment"
+        android:title="Favorite"
+        android:icon="@drawable/favorite_filled_icon"/>
+
+    <item android:id="@+id/onlineHomeFragment"
+        android:title="Album"
+        android:icon="@drawable/icon_album"/>
+
+    <item android:id="@+id/playListFragment"
+        android:title="PlayList"
+        android:icon="@drawable/icon_playlist"/>
+
+</menu>

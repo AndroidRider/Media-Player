@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/themeColor"
+    tools:context=".Fragment.NowPlayingFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/songImageNP"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:src="@drawable/music_logo"
+        app:shapeAppearanceOverlay="@style/SoftCorner"/>
+
+
+    <ImageView
+        android:id="@+id/nextButtonNP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/icon_fast_forward"
+        app:tint="@color/white"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/playPauseButtonNP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/nextButtonNP"
+        android:src="@drawable/icon_play"
+        android:layout_centerVertical="true"
+        app:tint="@color/white"/>
+
+
+
+    <TextView
+        android:id="@+id/songTitleNP"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toStartOf="@+id/playPauseButtonNP"
+        android:layout_toEndOf="@+id/songImageNP"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:fontFamily="@font/nunito_medium"
+        android:singleLine="true"
+        android:text="Song Title"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
