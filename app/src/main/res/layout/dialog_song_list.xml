@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewStyle"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/style_bottom_sheet_dialog_line"
+            android:layout_gravity="center"/>
+
+        <TextView
+            style="@style/MyTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose to play next song"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/style_scroll_bar_icon"
+        tools:listitem="@layout/recycler_dialog_list_item_song"/>
+
+</LinearLayout>
