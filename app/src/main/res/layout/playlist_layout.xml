@@ -7,7 +7,7 @@
     app:cardCornerRadius="15dp"
     app:strokeWidth="2dp"
     android:layout_margin="10dp"
-    app:strokeColor="@color/mainColor">
+    app:strokeColor="?attr/themeColor">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/playlistImage"
@@ -31,7 +31,8 @@
         android:singleLine="true"
         android:text="@string/playlist_name"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:background="@null"
+        style="@style/MyTextViewStyle"
         android:contentDescription="@string/playlist_name"/>
 
     <ImageButton
@@ -41,8 +42,8 @@
         android:layout_marginTop="130dp"
         android:layout_marginStart="130dp"
         android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/icon_delete"
-        app:tint="@color/mainColor"
+        android:src="@drawable/playlist_delete_icon"
+        app:tint="?attr/themeColor"
         android:contentDescription="@string/playlist_delete"/>
 
 

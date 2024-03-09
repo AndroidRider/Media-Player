@@ -3,18 +3,18 @@
 
     <item android:id="@+id/allSongFragment"
         android:title="All Song"
-        android:icon="@drawable/icon_library_music"/>
+        android:icon="@drawable/bottom_nav_library_music_icon"/>
 
     <item android:id="@+id/favoriteSongFragment"
         android:title="Favorite"
-        android:icon="@drawable/favorite_filled_icon"/>
+        android:icon="@drawable/player_favorite_filled_icon"/>
 
-    <item android:id="@+id/onlineHomeFragment"
+    <item android:id="@+id/albumFragment"
         android:title="Album"
-        android:icon="@drawable/icon_album"/>
+        android:icon="@drawable/bottom_nav_album_icon"/>
 
     <item android:id="@+id/playListFragment"
         android:title="PlayList"
-        android:icon="@drawable/icon_playlist"/>
+        android:icon="@drawable/bottom_nav_playlist_icon"/>
 
 </menu>

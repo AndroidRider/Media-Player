@@ -1,4 +1,3 @@
-
 package com.androidrider.mediaplayer.Fragment
 
 import android.Manifest
@@ -15,22 +14,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.androidrider.mediaplayer.Activity.MainActivity
 import com.androidrider.mediaplayer.Activity.MainActivity.Companion.sortOrder
 import com.androidrider.mediaplayer.Adapter.AllSongAdapter
 import com.androidrider.mediaplayer.Model.AllSongModel
 import com.androidrider.mediaplayer.R
 import com.androidrider.mediaplayer.databinding.FragmentAllSongBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.io.File
-import java.util.Locale
 
 class AllSongFragment : Fragment() {
 
@@ -42,9 +40,8 @@ class AllSongFragment : Fragment() {
 
         lateinit var musicListMA: ArrayList<AllSongModel>
         lateinit var musicListSearch: ArrayList<AllSongModel>
-        var search : Boolean = false
+        var search: Boolean = false
 
-        //************************ test ************
         lateinit var instance: AllSongFragment
             private set
 
@@ -53,6 +50,7 @@ class AllSongFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
+
         requireContext().theme.applyStyle(MainActivity.currentTheme[MainActivity.themeIndex], true)
         // Inflate the layout for this fragment
 
@@ -65,7 +63,7 @@ class AllSongFragment : Fragment() {
         return binding.root
     }
 
-    //************************ test ************
+
     override fun onAttach(context: Context) {
         super.onAttach(context)
         instance = this
@@ -97,18 +95,21 @@ class AllSongFragment : Fragment() {
     }
 
     private fun hasBothPermissions(): Boolean {
-        return hasPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) &&
+        return hasPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) &&
                 hasPermission(Manifest.permission.FOREGROUND_SERVICE)
     }
 
     private fun hasPermission(permission: String): Boolean {
-        return ContextCompat.checkSelfPermission(requireContext(), permission) == PackageManager.PERMISSION_GRANTED
+        return ContextCompat.checkSelfPermission(
+            requireContext(),
+            permission
+        ) == PackageManager.PERMISSION_GRANTED
     }
 
     private fun getDeniedPermissions(): List<String> {
         val deniedPermissions = mutableListOf<String>()
-        if (!hasPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            deniedPermissions.add(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        if (!hasPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            deniedPermissions.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
         if (!hasPermission(Manifest.permission.FOREGROUND_SERVICE)) {
             deniedPermissions.add(Manifest.permission.FOREGROUND_SERVICE)
@@ -116,7 +117,11 @@ class AllSongFragment : Fragment() {
         return deniedPermissions
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == 13) {
             val deniedPermissions = getDeniedPermissions()
@@ -187,19 +192,25 @@ class AllSongFragment : Fragment() {
         )
         val cursor = requireContext().contentResolver.query(
             MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
-            projection, selection, null, MainActivity.sortingList[MainActivity.sortOrder], null
+            projection, selection, null, MainActivity.sortingList[sortOrder], null
         )
 //        MediaStore.Audio.Media.DATE_ADDED + " DESC"
         if (cursor != null) {
             if (cursor.moveToFirst())
                 do {
-                    val titleC = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.TITLE))
+                    val titleC =
+                        cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.TITLE))
                     val idC = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media._ID))
-                    val albumC = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM))
-                    val artistC = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST))
+                    val albumC =
+                        cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM))
+                    val artistC =
+                        cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST))
                     val pathC = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.DATA))
-                    val durationC = cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.Media.DURATION))
-                    val albumIdC = cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM_ID)).toString()
+                    val durationC =
+                        cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.Media.DURATION))
+                    val albumIdC =
+                        cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM_ID))
+                            .toString()
                     val uri = Uri.parse("content://media/external/audio/albumart")
                     val artUriC = Uri.withAppendedPath(uri, albumIdC).toString()
 
@@ -217,20 +228,19 @@ class AllSongFragment : Fragment() {
     }
 
 
-
     //Song Search Code
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
 
-        inflater.inflate(R.menu.search_view, menu)
+        inflater.inflate(R.menu.toolbar_menu, menu)
         val item = menu.findItem(R.id.searchView)
         val searchView = item.actionView as SearchView
         searchView.queryHint = "Search notes here..."
 
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean = true
             override fun onQueryTextChange(newText: String?): Boolean {
                 musicListSearch = ArrayList()
-                if (newText != null){
+                if (newText != null) {
                     val userInput = newText.lowercase()
                     for (song in musicListMA)
                         if (song.title.lowercase().contains(userInput))
@@ -241,9 +251,35 @@ class AllSongFragment : Fragment() {
                 return true
             }
         })
+        // Sorting setup
+        val sortItem = menu.findItem(R.id.sort)
+        sortItem.setOnMenuItemClickListener {
+            showSortDialog()
+            true
+        }
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    private fun showSortDialog() {
+        val menuList = arrayOf("Recently Added", "Song Title", "File Size")
+        var currentSort = sortOrder
 
+        val builder = MaterialAlertDialogBuilder(requireActivity())
+        builder.setTitle("Sorting")
+            .setPositiveButton("OK") { _, _ ->
+                val editor = requireActivity().getSharedPreferences("SORTING", MODE_PRIVATE).edit()
+                editor.putInt("sortOrder", currentSort)
+                editor.apply()
+
+                findNavController().navigate(R.id.action_to_allSongFragment)
+
+            }
+            .setSingleChoiceItems(menuList, currentSort) { _, which ->
+                currentSort = which
+            }
+
+        val customDialog = builder.create()
+        customDialog.show()
+    }
 
 }

@@ -25,6 +25,7 @@
         android:layout_height="180dp"
         android:orientation="horizontal"
         android:layout_marginTop="2dp"
+        android:background="?attr/themeColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -32,8 +33,10 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/pdImage"
             android:layout_width="230dp"
-            android:background="@color/mainColor"
+            android:padding="2dp"
             android:layout_height="match_parent"
+            android:background="?attr/themeColor"
+            app:shapeAppearanceOverlay="@style/SoftCorner"
             android:src="@drawable/music_logo"/>
         <TextView
             android:id="@+id/pdName"
@@ -73,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableTop="@drawable/icon_add"
+            android:drawableTop="@drawable/playlist_add_icon"
             android:singleLine="true"
             android:text="Add"
             android:textAllCaps="false"
@@ -87,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableTop="@drawable/ic_remove"
+            android:drawableTop="@drawable/playlist_remove_icon"
             android:singleLine="true"
             android:text="Remove All"
             android:textAllCaps="false"

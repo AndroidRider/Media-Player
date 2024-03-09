@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:background="@color/gray_light"
     tools:context=".Activity.SettingsActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbarPlayerActivity"
+        android:id="@+id/toolbarSettingActivity"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/themeColor"
@@ -17,111 +18,104 @@
         app:title="Settings"
         app:titleTextColor="@color/white"/>
 
-    <TextView
+
+<!--    Switch-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:text="Set Theme"
-        android:textSize="18sp"
-        android:background="@color/white"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="2dp"
-        android:orientation="horizontal"
-        android:background="@color/white">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/theme0"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle_icon"
-            android:tint="@color/theme0"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/theme1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle_icon"
-            android:tint="@color/theme1"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/theme2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle_icon"
-            android:tint="@color/theme2"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/theme3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle_icon"
-            android:tint="@color/theme3"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/theme4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle_icon"
-            android:tint="@color/theme4"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/theme5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle_icon"
-            android:tint="@color/theme5"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginVertical="2dp"
-        android:orientation="horizontal"
-        android:background="@color/white"
-        android:paddingHorizontal="16dp">
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewStyle"
+        android:layout_marginTop="2dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="2dp"
-            android:paddingStart="5dp"
-            android:layout_weight="1"
-            android:gravity="start|center"
-            android:text="Sort by"
+            android:id="@+id/tvNightMode"
+            style="@style/MyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="Night Mode"
             android:textSize="18sp"
-            android:background="@color/white"/>
+            app:drawableStartCompat="@drawable/setting_dark_mode_icon"
+            android:drawablePadding="10dp" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/sortButton"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/sort_icon"
-            android:tint="@color/mainColor"
-            android:padding="5dp"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/nightModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            android:paddingHorizontal="5dp" />
 
+    </RelativeLayout>
 
-    </LinearLayout>
 
     <TextView
-        android:id="@+id/versionName"
+        android:id="@+id/setTheme"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:text="Version : 1.0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="14dp"
+        android:text="Theme"
         android:textSize="18sp"
-        android:background="@color/white"/>
+        style="@style/MyTextViewStyle"
+        app:drawableStartCompat="@drawable/setting_theme_icon"
+        android:drawablePadding="10dp"
+        app:drawableEndCompat="@drawable/setting_forward_arrow_icon" />
 
+    <TextView
+        android:id="@+id/selectFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="14dp"
+        android:text="Font Family"
+        android:textSize="18sp"
+        style="@style/MyTextViewStyle"
+        app:drawableStartCompat="@drawable/setting_font_icon"
+        android:drawablePadding="10dp"
+        app:drawableEndCompat="@drawable/setting_forward_arrow_icon" />
+
+
+    <TextView
+        android:id="@+id/sortButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="14dp"
+        android:text="Sort by"
+        android:textSize="18sp"
+        style="@style/MyTextViewStyle"
+        app:drawableStartCompat="@drawable/setting_sort_icon"
+        android:drawablePadding="10dp"
+        app:drawableEndCompat="@drawable/setting_forward_arrow_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="App Version"
+            android:textSize="18sp"
+            style="@style/MyTextViewStyle"
+            app:drawableStartCompat="@drawable/setting_version_icon"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="14dp"
+            android:text="Version : 0.0"
+            android:textSize="18sp"
+            style="@style/MyTextViewStyle"/>
+    </LinearLayout>
 
 
 </LinearLayout>

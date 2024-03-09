@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.androidrider.mediaplayer.Activity.AboutActivity
+import com.androidrider.mediaplayer.Activity.DumActivity
 import com.androidrider.mediaplayer.Activity.MainActivity
 import com.androidrider.mediaplayer.Activity.PlayerActivity
 import com.androidrider.mediaplayer.R
@@ -25,10 +26,7 @@ class AlbumFragment : Fragment() {
 
         binding = FragmentAlbumBinding.inflate(layoutInflater)
 
-        binding.openSettingButton.setOnClickListener {
-            startActivity(Intent(requireContext(), AboutActivity::class.java))
 
-        }
 
         return binding.root
     }

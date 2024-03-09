@@ -18,5 +18,26 @@
     <string name="playlist_name">Playlist Name</string>
     <string name="playlist_delete">Delete</string>
 
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="todo">TODO</string>
+
+
+    <!--      font-Array      -->
+    <string-array name="font_options">
+        <item>Font1</item>
+        <item>Font2</item>
+        <item>Font3</item>
+        <item>Font4</item>
+        <item>Font5</item>
+        <item>Font6</item>
+        <item>Font7</item>
+        <item>Font8</item>
+        <item>Font9</item>
+        <item>Font10</item>
+        <item>Font11</item>
+        <!-- Add more font options as needed -->
+    </string-array>
+
 
 </resources>

@@ -11,7 +11,6 @@ import com.androidrider.mediaplayer.Model.setSongPosition
 import com.androidrider.mediaplayer.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import kotlin.system.exitProcess
 
 class NotificationReceiver: BroadcastReceiver() {
 
@@ -36,8 +35,8 @@ class NotificationReceiver: BroadcastReceiver() {
         PlayerActivity.isPlaying = true
         PlayerActivity.musicService!!.mediaPlayer!!.start()
         PlayerActivity.musicService!!.showNotification(R.drawable.notification_pause, 1F)
-        PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_pause)
-        NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.icon_pause)
+        PlayerActivity.binding.playPause.setImageResource(R.drawable.player_pause_icon)
+        NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.player_pause_icon)
     }
 
     private fun pauseMusic(){
@@ -45,8 +44,8 @@ class NotificationReceiver: BroadcastReceiver() {
         PlayerActivity.isPlaying = false
         PlayerActivity.musicService!!.mediaPlayer!!.pause()
         PlayerActivity.musicService!!.showNotification(R.drawable.notification_play, 0F)
-        PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_play)
-        NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.icon_play)
+        PlayerActivity.binding.playPause.setImageResource(R.drawable.player_play_icon)
+        NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.player_play_icon)
 
     }
 
@@ -73,9 +72,9 @@ class NotificationReceiver: BroadcastReceiver() {
 
         PlayerActivity.fIndex = favoriteChecker(PlayerActivity.musicListPA[PlayerActivity.songPosition].id)
         if (PlayerActivity.isFavorite)
-            PlayerActivity.binding.favoriteButton.setImageResource(R.drawable.favorite_filled_icon)
+            PlayerActivity.binding.favoriteButton.setImageResource(R.drawable.player_favorite_filled_icon)
         else
-            PlayerActivity.binding.favoriteButton.setImageResource(R.drawable.favorite_empty_icon)
+            PlayerActivity.binding.favoriteButton.setImageResource(R.drawable.player_favorite_empty_icon)
 
     }
 }

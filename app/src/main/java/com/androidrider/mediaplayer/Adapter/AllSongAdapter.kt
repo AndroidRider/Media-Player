@@ -1,10 +1,16 @@
 package com.androidrider.mediaplayer.Adapter
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.os.Handler
+import android.os.Looper
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.androidrider.mediaplayer.Activity.PlayerActivity
@@ -23,13 +29,13 @@ class AllSongAdapter(private val context: Context, private var musicList: ArrayL
                      private val playlistDetails: Boolean = false, private val selectionActivity: Boolean = false):
     RecyclerView.Adapter<AllSongAdapter.ViewHolder>() {
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = RecyclerAllSongLayoutBinding.inflate(LayoutInflater.from(context),parent, false)
         return ViewHolder(binding)
     }
-    override fun getItemCount(): Int {
-        return musicList.size
-    }
+
+    override fun getItemCount(): Int = musicList.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
@@ -49,15 +55,20 @@ class AllSongAdapter(private val context: Context, private var musicList: ArrayL
                     sendIntent(ref = "PlaylistDetailsAdapter", pos = position)
                 }
             }
-            selectionActivity-> {
+            selectionActivity -> {
                 holder.root.setOnClickListener {
-                    if (addSong(musicList[position]))
-                        holder.root.setBackgroundColor(ContextCompat.getColor(context, R.color.mainColor))
-                    else
-                        holder.root.setBackgroundColor(ContextCompat.getColor(context, R.color.white))
-                }
+                    if (addSong(musicList[position])) {
+//                        holder.root.setBackgroundColor(ContextCompat.getColor(context, R.color.mainColor))
+                        holder.root.setBackgroundColor(ContextCompat.getColor(context, android.R.color.holo_green_light))
 
+                        Toast.makeText(context, "Added", Toast.LENGTH_SHORT).show()
+                    } else {
+                        holder.root.setBackgroundColor(ContextCompat.getColor(context, R.color.white))
+                        Toast.makeText(context, "Removed", Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
+
             else ->{
                 holder.root.setOnClickListener {
                     when{
@@ -70,15 +81,11 @@ class AllSongAdapter(private val context: Context, private var musicList: ArrayL
             }
         }
 
-
-
-
     }
 
     class ViewHolder(val binding: RecyclerAllSongLayoutBinding): RecyclerView.ViewHolder(binding.root) {
         val root = binding.root
     }
-
 
     private fun sendIntent(ref: String, pos: Int){
         val intent = Intent(context, PlayerActivity::class.java)
@@ -93,6 +100,7 @@ class AllSongAdapter(private val context: Context, private var musicList: ArrayL
         musicList.addAll(searchList)
         notifyDataSetChanged()
     }
+
 
     companion object {
         @SuppressLint("NotifyDataSetChanged")

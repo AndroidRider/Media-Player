@@ -13,6 +13,7 @@ import com.androidrider.mediaplayer.Fragment.PlayListFragment
 import com.androidrider.mediaplayer.Model.MusicPlaylist
 import com.androidrider.mediaplayer.Model.checkPlaylist
 import com.androidrider.mediaplayer.R
+import com.androidrider.mediaplayer.Utils.FontUtils
 import com.androidrider.mediaplayer.databinding.ActivityPlaylistDetailBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -29,6 +30,7 @@ class PlaylistDetailActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        FontUtils.setAppFont(this)
         super.onCreate(savedInstanceState)
         setTheme(MainActivity.currentTheme[MainActivity.themeIndex])
         binding = ActivityPlaylistDetailBinding.inflate(layoutInflater)
@@ -102,7 +104,6 @@ class PlaylistDetailActivity : AppCompatActivity() {
         editor.putString("MusicPlaylist", jsonStringPlaylist)
         editor.apply()
     }
-
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

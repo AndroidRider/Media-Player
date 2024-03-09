@@ -9,16 +9,20 @@
         android:id="@+id/allSongFragment"
         android:name="com.androidrider.mediaplayer.Fragment.AllSongFragment"
         android:label="fragment_all_song"
-        tools:layout="@layout/fragment_all_song" />
+        tools:layout="@layout/fragment_all_song" >
+        <action
+            android:id="@+id/action_to_allSongFragment"
+            app:destination="@id/allSongFragment" />
+    </fragment>
     <fragment
         android:id="@+id/favoriteSongFragment"
         android:name="com.androidrider.mediaplayer.Fragment.FavoriteSongFragment"
         android:label="fragment_favorite_song"
         tools:layout="@layout/fragment_favorite_song" />
     <fragment
-        android:id="@+id/onlineHomeFragment"
+        android:id="@+id/albumFragment"
         android:name="com.androidrider.mediaplayer.Fragment.AlbumFragment"
-        android:label="fragment_online_home"
+        android:label="fragment_album"
         tools:layout="@layout/fragment_album" />
     <fragment
         android:id="@+id/playListFragment"

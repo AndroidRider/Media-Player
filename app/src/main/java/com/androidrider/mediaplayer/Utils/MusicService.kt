@@ -119,7 +119,7 @@ class MusicService: Service(), AudioManager.OnAudioFocusChangeListener {
             PlayerActivity.musicService!!.mediaPlayer!!.reset()
             PlayerActivity.musicService!!.mediaPlayer!!.setDataSource(PlayerActivity.musicListPA[PlayerActivity.songPosition].path)
             PlayerActivity.musicService!!.mediaPlayer!!.prepare()
-            PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_pause)
+            PlayerActivity.binding.playPause.setImageResource(R.drawable.player_pause_icon)
             PlayerActivity.musicService!!.showNotification(R.drawable.notification_pause, 0F)
 
             PlayerActivity.binding.tvStartTime.text = formatDuration(mediaPlayer!!.currentPosition.toLong())
@@ -147,16 +147,16 @@ class MusicService: Service(), AudioManager.OnAudioFocusChangeListener {
             PlayerActivity.isPlaying = false
             mediaPlayer!!.pause()
             showNotification(R.drawable.notification_play, 0F)
-            PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_play)
-            NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.icon_play)
+            PlayerActivity.binding.playPause.setImageResource(R.drawable.player_play_icon)
+            NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.player_play_icon)
         }
         else{
             //play music
             PlayerActivity.isPlaying = true
             mediaPlayer!!.start()
             showNotification(R.drawable.notification_pause, 1F)
-            PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_pause)
-            NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.icon_pause)
+            PlayerActivity.binding.playPause.setImageResource(R.drawable.player_pause_icon)
+            NowPlayingFragment.binding.playPauseButtonNP.setImageResource(R.drawable.player_pause_icon)
         }
     }
 

@@ -2,23 +2,55 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#717171</color>
+    <color name="gray_light">#1A717171</color>
     <color name="red">#D50000</color>
     <color name="green">#00C853</color>
     <color name="blue">#6200EA</color>
 
 
-    <color name="theme0">#FA253D</color>
-    <color name="theme1">#00C853</color>
-    <color name="theme2">#304FFE</color>
-    <color name="theme3">#C51162</color>
-    <color name="theme4">#FF6D00</color>
-    <color name="theme5">#FF000000</color>
-    <color name="theme6">#00BFA5</color>
-    <color name="theme7">#FFD600</color>
-    <color name="theme8">#AA00FF</color>
-    <color name="theme9">#D50000</color>
+    <color name="controlColor">#FFFFFFFF</color>
 
-    <color name="mainColor2">#26A69A</color>
+    <color name="theme0">#FA253D</color>
+    <color name="theme1">#D50000</color>
+    <color name="theme2">#C51162</color>
+    <color name="theme3">#AA00FF</color>
+    <color name="theme4">#304FFE</color>
+    <color name="theme5">#2962FF</color>
+    <color name="theme6">#0091EA</color>
+    <color name="theme7">#00B8D4</color>
+    <color name="theme8">#00BFA5</color>
+    <color name="theme9">#00C853</color>
+    <color name="theme10">#64DD17</color>
+    <color name="theme11">#AEEA00</color>
+    <color name="theme12">#FFAB00</color>
+    <color name="theme13">#FF6D00</color>
+    <color name="theme14">#DD2C00</color>
+
+    <color name="theme15">#B71C1C</color>
+    <color name="theme16">#880E4F</color>
+    <color name="theme17">#4A148C</color>
+    <color name="theme18">#311B92</color>
+    <color name="theme19">#0D47A1</color>
+    <color name="theme20">#01579B</color>
+    <color name="theme21">#006064</color>
+    <color name="theme22">#004D40</color>
+    <color name="theme23">#1B5E20</color>
+    <color name="theme24">#33691E</color>
+    <color name="theme25">#827717</color>
+    <color name="theme26">#F57F17</color>
+    <color name="theme27">#FF6F00</color>
+    <color name="theme28">#E65100</color>
+    <color name="theme29">#BF360C</color>
+
+    <color name="theme30">#E57373</color>
+    <color name="theme31">#F06292</color>
+    <color name="theme32">#4DB6AC</color>
+    <color name="theme33">#FFD54F</color>
+    <color name="theme34">#81C784</color>
+    <color name="theme35">#FF8A65</color>
+
+
     <color name="mainColor">#FA253D</color>
 
     <color name="toolbarColor">@color/mainColor</color>
@@ -52,4 +84,16 @@
 
 
 
+
+<!--    night theme color-->
+
+    <color name="nightTheme0">#000000</color>
+    <color name="nightTheme1">#030B39</color>
+    <color name="nightTheme2">#3A0D21</color>
+    <color name="nightTheme3">#2B0340</color>
+    <color name="nightTheme4">#090E29</color>
+    <color name="nightTheme5">#33040D</color>
+
+
 </resources>
+

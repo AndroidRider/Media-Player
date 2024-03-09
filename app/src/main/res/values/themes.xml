@@ -2,49 +2,46 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MediaPlayer" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
          <item name="android:statusBarColor">@color/mainColor</item>
-
-<!--        <item name="android:windowBackground">@drawable/splash_screen</item>-->
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-
+<!--        <item name="android:windowBackground">@drawable/splash_screen</item>-->
 
     </style>
 
     <style name="Theme.MediaPlayer" parent="Base.Theme.MediaPlayer" />
 
-    <!-- For toolbar back arrow color changing -->
+    <!-- ===== For toolbar back arrow color changing ===== -->
     <style name="MyToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
         <item name="android:tint">@color/white</item>
-
     </style>
 
-    <!-- For Bottom Navigation View FontFamily -->
-    <style name="BottomNavigationViewTextStyle">
-        <item name="android:fontFamily">@font/nunito_medium</item>
-    </style>
-
-
-    <!-- For the shapeable  ImageView-->
+    <!-- ===== For the Shapeable  ImageView =====-->
     <style name="SoftCorner">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10dp</item>
         <item name="color">@color/white</item>
     </style>
-
-    <!-- SearchViewStyle -->
+    <!-- ===== SearchViewStyle ===== -->
     <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
         <item name="android:keyTextSize">8sp</item>
-        <item name="android:background">@drawable/search_border</item>
+        <item name="android:background">@drawable/style_search_border</item>
         <item name="queryBackground">@null</item>
     </style>
 
+    <!--  ****************************************  CREATING THEME ************************************************-->
 
-<!--  ****************************************  Creating theme ************************************************-->
+    <style name="MyTextViewStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <!-- You can add more attributes as needed -->
+    </style>
+
+
+
     <attr name="themeColor" format="color"/>
 
-    <!--    Background as well as text color for alert dialog buttons-->
+    <!-- ===== Background as well as text color for alert dialog buttons ===== -->
     <attr name="dialogTextColor" format="color"/>
     <attr name="dialogBtnBackground" format="color"/>
 
@@ -92,8 +89,249 @@
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
     </style>
 
+    <style name="theme6" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme6</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
 
-    //THEME FOR NAVIGATION DRAWER
+    <style name="theme7" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme7</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme8" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme8</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme9" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme9</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme10" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme10</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme11" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme11</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme12" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme12</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme13" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme13</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    <style name="theme14" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme14</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme15" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme15</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme16" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme16</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme17" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme17</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme18" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme18</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme19" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme19</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme20" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme20</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme21" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme21</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme22" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme22</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme23" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme23</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme24" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme24</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme25" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme25</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme26" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme26</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme27" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme27</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme28" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme28</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme29" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme29</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme30" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme30</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme31" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme31</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme32" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme32</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme33" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme33</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme34" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme34</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="theme35" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="themeColor">@color/theme35</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
+        <item name="dialogBtnBackground">?attr/themeColor</item>
+        <item name="dialogTextColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+
+
+<!-- ========================= THEME FOR NAVIGATION DRAWER =========================-->
+
     <style name="navTheme0" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="themeColor">@color/mainColor</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
@@ -138,7 +376,8 @@
     </style>
 
 
-    //NEW DARK THEME
+    <!-- ========================= THEME FOR DARK MODE =========================-->
+
     <style name="coolBlack" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="themeColor">@color/black</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/themeColor</item>
@@ -151,5 +390,120 @@
         <item name="dialogBtnBackground">@color/white</item>
         <item name="dialogTextColor">@color/black</item>
     </style>
+
+
+<!--  ****************************************  CREATING FONT ************************************************-->
+
+<!--    Default Theme-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add other theme attributes as needed -->
+        <item name="android:fontFamily">@font/arial</item>
+    </style>
+
+
+    <style name="Font1" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/arial</item>
+    </style>
+
+    <style name="Font2" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/angeline_vintage_demo</item>
+    </style>
+
+    <style name="Font3" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:fontFamily">@font/bookman_regular</item>
+    </style>
+
+    <style name="Font4" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/dancing_script_regular</item>
+    </style>
+
+    <style name="Font5" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/asthelica_questak_serif</item>
+    </style>
+
+    <style name="Font6" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:fontFamily">@font/new_tegomin_regular</item>
+    </style>
+
+    <style name="Font7" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/nova_square_regular</item>
+    </style>
+
+    <style name="Font8" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/nunito_medium</item>
+    </style>
+
+    <style name="Font9" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/playball</item>
+    </style>
+
+    <style name="Font10" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Font11" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/productive_day</item>
+    </style>
+
+    <style name="Font12" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/public_sans_regular</item>
+    </style>
+
+    <style name="Font13" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/satisfy_regular</item>
+    </style>
+
+    <style name="Font14" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/black_rocky</item>
+    </style>
+
+    <style name="Font15" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/calibri_regular</item>
+    </style>
+
+    <style name="Font16" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/calibri_light</item>
+    </style>
+
+    <style name="Font17" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/calibri_bold</item>
+    </style>
+
+    <style name="Font18" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/calibri_italic</item>
+    </style>
+
+    <style name="Font19" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/christmas_sabila</item>
+    </style>
+
+    <style name="Font20" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/christmas_theme</item>
+    </style>
+
+    <style name="Font21" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/fonphoria</item>
+    </style>
+
+    <style name="Font22" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/fountained</item>
+    </style>
+
+    <style name="Font23" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/glaston</item>
+    </style>
+
+    <style name="Font24" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/ramadan_greeting</item>
+    </style>
+
+    <style name="Font25" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/specta_ordinary_demo_regular</item>
+    </style>
+
+    <style name="Font26" parent="Theme.MediaPlayer">
+        <item name="android:fontFamily">@font/thiqall</item>
+    </style>
+
 
 </resources>

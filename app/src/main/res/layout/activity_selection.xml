@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,13 +22,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            app:queryHint="Search Song"
-            app:searchHintIcon="@drawable/ic_search"
+            app:queryHint="Search Song..."
+            app:searchHintIcon="@drawable/toolbar_search_icon"
             android:focusable="false"
             style="@style/SearchViewStyle"
             app:iconifiedByDefault="false"
             android:backgroundTint="@color/white"
-            android:background="@drawable/search_border"/>
+            android:background="@drawable/style_search_border"/>
 
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -35,6 +36,7 @@
         android:id="@+id/selectionRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />

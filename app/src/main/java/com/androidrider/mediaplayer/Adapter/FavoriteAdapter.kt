@@ -30,7 +30,11 @@ class FavoriteAdapter(private val context: Context, private var musicList: Array
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.titleFavorite.text = musicList[position].title
+        val list = musicList[position]
+
+        holder.titleFavorite.text = list.title
+        holder.binding.songAlbum.text = list.album
+        holder.binding.songDuration.text = formatDuration(list.duration)
 
         val data = musicList[position]
         Glide.with(context).load(data.artUri)

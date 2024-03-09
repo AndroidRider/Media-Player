@@ -12,7 +12,6 @@ import com.androidrider.mediaplayer.Activity.MainActivity
 import com.androidrider.mediaplayer.Activity.PlayerActivity
 import com.androidrider.mediaplayer.Model.setSongPosition
 import com.androidrider.mediaplayer.R
-import com.androidrider.mediaplayer.databinding.FragmentAllSongBinding
 import com.androidrider.mediaplayer.databinding.FragmentNowPlayingBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -46,7 +45,7 @@ class NowPlayingFragment : Fragment() {
                 RequestOptions().placeholder(R.drawable.music_logo).centerCrop()
             ).into(binding.songImageNP)
             binding.songTitleNP.text = PlayerActivity.musicListPA[PlayerActivity.songPosition].title
-            PlayerActivity.musicService!!.showNotification(R.drawable.icon_pause, 1F)
+            PlayerActivity.musicService!!.showNotification(R.drawable.player_pause_icon, 1F)
             playMusic()
         }
 
@@ -82,8 +81,8 @@ class NowPlayingFragment : Fragment() {
 
             binding.songTitleNP.text = PlayerActivity.musicListPA[PlayerActivity.songPosition].title
 
-            if (PlayerActivity.isPlaying) binding.playPauseButtonNP.setImageResource(R.drawable.icon_pause)
-            else binding.playPauseButtonNP.setImageResource(R.drawable.icon_play)
+            if (PlayerActivity.isPlaying) binding.playPauseButtonNP.setImageResource(R.drawable.player_pause_icon)
+            else binding.playPauseButtonNP.setImageResource(R.drawable.player_play_icon)
 
             binding.songTitleNP.isSelected = true
         }
@@ -91,18 +90,18 @@ class NowPlayingFragment : Fragment() {
 
     private fun playMusic() {
         PlayerActivity.musicService!!.mediaPlayer!!.start()
-        binding.playPauseButtonNP.setImageResource(R.drawable.icon_pause)
-        PlayerActivity.musicService!!.showNotification(R.drawable.icon_pause, 1F)
-        PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_pause)
+        binding.playPauseButtonNP.setImageResource(R.drawable.player_pause_icon)
+        PlayerActivity.musicService!!.showNotification(R.drawable.player_pause_icon, 1F)
+        PlayerActivity.binding.playPause.setImageResource(R.drawable.player_pause_icon)
         PlayerActivity.isPlaying = true
 
     }
 
     private fun pauseMusic() {
         PlayerActivity.musicService!!.mediaPlayer!!.pause()
-        binding.playPauseButtonNP.setImageResource(R.drawable.icon_play)
-        PlayerActivity.musicService!!.showNotification(R.drawable.icon_play, 0F)
-        PlayerActivity.binding.playPause.setImageResource(R.drawable.icon_play)
+        binding.playPauseButtonNP.setImageResource(R.drawable.player_play_icon)
+        PlayerActivity.musicService!!.showNotification(R.drawable.player_play_icon, 0F)
+        PlayerActivity.binding.playPause.setImageResource(R.drawable.player_play_icon)
         PlayerActivity.isPlaying = false
 
     }

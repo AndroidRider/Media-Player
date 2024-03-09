@@ -1,27 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:orientation="vertical">
+    android:layout_marginBottom="1dp"
+    style="@style/MyTextViewStyle">
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imageFavorite"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/music_logo"
-        app:shapeAppearanceOverlay="@style/SoftCorner"/>
 
-    <TextView
-        android:id="@+id/titleFavorite"
-        android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="2"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:text="Song Title"/>
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp">
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageFavorite"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher_background"
+            app:shapeAppearanceOverlay="@style/SoftCorner"/>
+
+        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--            android:id="@+id/songImage"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:src="@drawable/ic_launcher_background"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/titleFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="This the title of songs"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/songDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="00:00"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/songAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="This the title of Album and another past industries"
+                android:layout_below="@id/titleFavorite"
+                android:textSize="16sp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:padding="10dp"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <com.google.android.material.imageview.ShapeableImageView-->
+<!--        android:id="@+id/imageFavorite"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="@drawable/music_logo"-->
+<!--        app:shapeAppearanceOverlay="@style/SoftCorner"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/titleFavorite"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:maxLines="2"-->
+<!--        android:gravity="center"-->
+<!--        style="@style/MyTextViewStyle"-->
+<!--        android:background="@null"-->
+<!--        android:textSize="18sp"-->
+<!--        android:text="Song Title"/>-->
+
+
+<!--</LinearLayout>-->
