@@ -5,23 +5,37 @@ sleep timer, visualizer effects, song filtering and searching, customizable them
 
 # Screenshot
 <p>
-  <img src="https://user-images.githubusercontent.com/140700822/263239140-ad23f34b-e37b-4332-8452-116ff18fc82c.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/e1d65d96-1e31-41fe-8e16-485bed61c032.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239194-f0338e7a-b27a-486a-be67-352f8ff0c291.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/b01a934e-9cda-46fd-9d98-a613e6e694f6.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239220-ceacabc0-6cb9-4e73-a3b6-e1c7f8e1f946.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/e4ec4fea-a11f-4958-9b11-9647ab64b8fd.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239251-90a4acf0-fa89-4b2a-921a-ebc2a2652ef6.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/b7f76134-0178-4255-977b-61a1e47803c4.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239268-a9bc75bd-47ea-4915-adec-26ca58bf8776.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/0c26d3f7-aa65-4e5c-b964-060643461f1b.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239330-670d4dfc-9355-4add-b24b-64ca07d48be6.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/30a9278f-bc3e-454b-9e9e-70118fde8e78.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239395-07cc39fa-ea91-4c32-9f56-cdc18fd100bd.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/77605746-c677-416a-aaab-3e2ed358e819.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239426-5b94939e-9f36-4dde-8c33-091132b8747e.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/84b7eeaf-5f2e-4ed2-9f90-9e0ccb2aa3be.png" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://user-images.githubusercontent.com/140700822/263239473-53b92a43-399d-45aa-99ec-d98f3ffc199e.png" alt="feed example" width = "200" >
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/6b398b6d-f179-433b-9e7d-e3847ac8aa49.png" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/aa39ce38-befa-4286-bafd-d58f07520578.png" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/0972930c-f7de-466c-87e9-2673676719e2.png" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/2f4860cc-36a3-4b42-9a7d-e5317228122b.png" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/cb8ff577-e4b5-47a5-abd7-d2c0c088aa6b.png" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/48ad5c0d-1f5f-46bf-b5e1-55c2c79dc54f.png" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/47533e98-e192-4e1b-ad4c-95973735a40e.png" alt="feed example" width = "200" >
+  
+ 
 </p>
 
 # Features:
